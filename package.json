@@ -15,6 +15,7 @@
   "author": "oasiscity",
   "license": "ISC",
   "dependencies": {
+    "@types/express": "^5.0.3",
     "@types/node": "^24.0.14",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
@@ -22,7 +23,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
-    "@types/express": "^5.0.3",
     "concurrently": "^9.2.0",
     "eslint": "^9.31.0",
     "globals": "^16.3.0",

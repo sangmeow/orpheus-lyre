@@ -4,7 +4,7 @@
   "description": "An intelligent filtering API that blocks harmful language and profanity—ensuring a safer, healthier space for communication.",
   "main": "src/express.ts",
   "scripts": {
-    "start": "npm install && export NODE_ENV=prod && node dist/express.js",
+    "start": "npm install && npx tsc && export NODE_ENV=prod && node dist/express.js",
     "build:start.mac": "npx tsc && node dist/express.js",
     "build:start.win": "npx tsc&& node dist/express.js",
     "dev.mac": "export NODE_ENV=dev && nodemon --watch './src/**/*.ts' --exec ts-node src/express.ts",

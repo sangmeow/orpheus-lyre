@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "rootDirs": [
-      "src"
-    ] /* 입력 파일들의 루트 디렉토리 설정. --outDir 옵션을 사용해 출력 디렉토리 설정이 가능 */,
+    "rootDirs": ["src"] /* 입력 파일들의 루트 디렉토리 설정. --outDir 옵션을 사용해 출력 디렉토리 설정이 가능 */,
     "outDir": "./dist" /* 출력될 디렉토리 설정 */,
     "lib": ["es2020"] /* 컴파일 과정에 사용될 라이브러리 파일 설정 */,
     "target": "es5" /* ECMAScript 목표 버전 설정: 'ES3'(기본), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,

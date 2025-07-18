@@ -68,3 +68,5 @@ then `.eslint.config.mjs` file will be created on your root directory
 ## NOTE
 
 - heroku는 NODE_ENV값을 production으로 한다.
+
+> heroku local web --port 3000

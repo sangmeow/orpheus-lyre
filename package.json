@@ -8,8 +8,8 @@
     "start.win": "npm install&& npx tsc&& set NODE_ENV=prod&& node dist/express.js",
     "build:start.mac": "npx tsc && node dist/express.js",
     "build:start.win": "npx tsc&& node dist/express.js",
-    "dev.mac": "export NODE_ENV=dev && nodemon --watch './src/**/*.ts' --exec ts-node src/express.ts",
-    "dev.win": "set NODE_ENV=dev&& nodemon --watch './src/**/*.ts' --exec ts-node src/express.ts"
+    "dev.mac": "export NODE_ENV=dev && nodemon --watch ./src/**/*.ts --exec ts-node src/express.ts",
+    "dev.win": "set NODE_ENV=dev&& nodemon --watch ./src/**/*.ts --exec ts-node src/express.ts"
   },
   "keywords": [],
   "author": "oasiscity",
@@ -17,6 +17,9 @@
   "dependencies": {
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "openai": "^5.10.1"
+  },
+  "devDependencies": {
     "@types/express": "^5.0.3",
     "@eslint/js": "^9.31.0",
     "@types/node": "^24.0.14",
@@ -28,6 +31,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.37.0"
-  },
-  "devDependencies": {}
+  }
 }

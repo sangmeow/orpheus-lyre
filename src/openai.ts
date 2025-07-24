@@ -10,7 +10,7 @@ const response = async (str: string) => {
   try {
     const result = await client.responses.create({
       model: "gpt-4.1",
-      input: str + `\n\n` + defaultConstant.requestContnet,
+      input: str + `\n\n` + defaultConstant.requestContent,
     });
     return result;
   } catch (error) {

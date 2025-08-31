@@ -28,21 +28,25 @@ export const prompt = `
 
   출력 형식(JSON Schema):
   {
-    "density": 0,
-    "title": "some string",
-    "content": "some string",
-    "filtered_title": "some string",
-    "inappropriate_title_words": ["some string"],
-    "filtered_title_comments": "some string",
-    "filtered_content": "some string",
-    "inappropriate_content_words": ["some string"],
-    "filtered_content_comments": "some string",
-    "inappropriate_score": {
-      "abuse": 0,
-      "profanity": 0,
-      "sexual": 0,
-      "racism": 0,
-      "violent": 0
-    }
+    type: "object",
+    properties: {
+      density: { type: "number", minimum: 0, maximum: 100 },
+      content: { type: "string" },
+      filtered_content: { type: "string" },
+      inappropriate_content_words: { type: "array", items: { type: "string" } },
+      filtered_content_comments: { type: "string" },
+      inappropriate_score: {
+        type: "object",
+        properties: {
+          abuse: { type: "number", minimum: 0, maximum: 100 },
+          profanity: { type: "number", minimum: 0, maximum: 100 },
+          sexual: { type: "number", minimum: 0, maximum: 100 },
+          racism: { type: "number", minimum: 0, maximum: 100 },
+          violent: { type: "number", minimum: 0, maximum: 100 }
+        },
+        required: ["abuse", "profanity", "sexual", "racism", "violent"]
+      }
+    },
+    required: ["density", "content", "filtered_content", "inappropriate_content_words", "filtered_content_comments", "inappropriate_score"]
   }
   `;
